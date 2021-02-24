@@ -1,0 +1,49 @@
+pods
+pod has containr and container has the same ip and same volume portnumber is diffrence
+why pods?
+kubernetes use multiple container 
+why multiple container in pods?
+some application or microprocess are tightly add the with each other
+logs
+adapter
+
+kubectl run firstpod --genrator=run-pod/v1 --image=nginx
+kubectl get pods
+kubectl get nodes
+WATCH Command
+watch command:kube  get pods -w   *** status running live
+explain:- Version kind
+json:
+yaml:ku getpods -o wide ymal
+decribe:ku desc pod nameof pod ** details check if any case the pods delete in nodes itauto matic
+container delete: kubectl delte container containername
+label: kubectl label pod podname env=namelabel
+    : ku label pod podname env1= 
+       ku label --overwrite pod podname env=nameyouwanttochange 
+labeldelete: ku label pod podname env1-
+for multipods:ku la pod --all env=labelname
+check label bt :ku get pods --show-labels
+changes runnig pods ku edit pod podname 
+imaparative command: edit file without yaml command
+Imperative objective >  implement the by self kubectl create command 
+declarative objective> directe get kubectl apply command > after it apply ku appl -f creative.yaml
+dry run : before the yaml run :kub app -f .yaml --dry-run
+diffrance bet the RUNNING command:ku diff -f .yaml
+ENVARMENTS:-
+pods add env file in yaml file in spec env:
+					- name: myname
+					
+Debug Pods:-kubectl exec podname whatyouwancheck(spec,container,lable,matadata)
+FOR MANY CONTAINER 
+Debug Pods:-# kubectl exec podname -c container in it name and what you wantcheck
+Login from kubernetes to docker containers
+#kubectl exec nameofpod -it bash
+Login into pode container by kubernetes
+#kubectl exec nameofpod -c nameofcontainer -it bash
+
+Check the container file by kubernetes
+# kubectl exec 
+
+
+
+
